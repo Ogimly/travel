@@ -1,0 +1,35 @@
+.cv {
+  display: flex;
+}
+@media (max-width: 600px) {
+  .cv {
+    flex-direction: column;
+  }
+}
+
+.info {
+  padding: 30px;
+}
+
+.info-section {
+  padding-bottom: 15px;
+}
+
+.info-section__list {
+  padding: 15px 15px 0 15px;
+}
+.info-section__item {
+  position: relative;
+  margin-left: 20px;
+
+  &:before {
+    content: '';
+    position: absolute;
+    top: 10px;
+    left: -20px;
+    width: 12px;
+    height: 12px;
+    border: 2px solid $color-title;
+    border-radius: 50%;
+  }
+}
