@@ -1,0 +1,18 @@
+.btn {
+  padding: 1rem 3rem;
+
+  background: $color-button;
+
+  border: none;
+  box-shadow: $box-shadow-button1, $box-shadow-button2;
+  border-radius: 1rem;
+
+  &:hover {
+    cursor: pointer;
+    background: $color-button-hover;
+  }
+
+  &_small {
+    @include text-button-small($color-text-button);
+  }
+}

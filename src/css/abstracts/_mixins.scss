@@ -44,3 +44,41 @@
   justify-content: $justify-content;
   align-items: $align-items;
 }
+
+// -----------------------------------------------------------------------------
+/// fonts
+@mixin text-logo($color) {
+  font-family: 'Magra';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 3.2rem;
+  line-height: 3.9rem;
+  color: $color;
+}
+
+@mixin text-menu($color) {
+  font-family: 'Red Hat Text';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.6rem;
+  line-height: 2.1rem;
+  color: $color;
+}
+
+@mixin text-line-menu($color) {
+  font-family: 'Red Hat Text';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.6rem;
+  line-height: 2.1rem;
+  color: $color;
+}
+
+@mixin text-button-small($color) {
+  font-family: 'Red Hat Text';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.6rem;
+  line-height: 2.1rem;
+  color: $color;
+}

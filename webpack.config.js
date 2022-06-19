@@ -35,7 +35,7 @@ module.exports = ({ development }) => ({
 
     filename: '[name].js',
 
-    assetModuleFilename: 'assets/[name][ext]',
+    assetModuleFilename: 'assets/[hash][ext]',
   },
 
   module: {

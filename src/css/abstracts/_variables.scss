@@ -3,8 +3,23 @@
 // -----------------------------------------------------------------------------
 
 // colors
+$color-body: rgba(247, 187, 174, 0.5);
 
-//blackout
+$color-header: rgba(242, 120, 92, 0.7);
+
+$color-button: #0d606f;
+$color-button-hover: #117a8d;
+
+$color-text-logo: #ffffff;
+$color-text-menu: #ffffff;
+$color-text-button: #ffffff;
+
+// blackout
+
+// box-shadow
+$box-shadow-header: 0px 4px 4px rgba(13, 96, 111, 0.5);
+$box-shadow-button1: 0px 4px 4px rgba(0, 0, 0, 0.25);
+$box-shadow-button2: 0px 2px 3px rgba(13, 96, 111, 0.16);
 
 /// Relative or absolute URL where all assets are served from
 $base-url: '../assets/' !default;
@@ -12,3 +27,4 @@ $base-url: '../assets/' !default;
 /// Breakpoints
 
 // width and height of project
+$width-project: 1440px;

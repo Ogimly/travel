@@ -1,1 +1,16 @@
+html {
+  scroll-behavior: smooth;
+  font-size: 10px;
+}
 
+* {
+  text-decoration: none;
+  transition: all 0.5s;
+}
+
+body {
+  background-color: $color-body;
+  font-family: 'Aleo', serif;
+  font-family: 'Magra', sans-serif;
+  font-family: 'Red Hat Text', sans-serif;
+}
