@@ -1,0 +1,172 @@
+// -----------------------------------
+//* WRAPPER
+.wrapper-inner {
+  width: 100%;
+
+  @include flex-vertical(center, space-between);
+  gap: 2.4em;
+}
+
+// -----------------------------------
+//* RADIO BUTTON
+.radio-input {
+  display: none;
+}
+
+// -----------------------------------
+//* SLIDER & SLIDES
+.slider {
+  width: 100%;
+  //   max-width: $width-destinations;
+  overflow: hidden;
+}
+
+.slides {
+  width: $width-slider;
+
+  @include flex-horizontal(center, space-between);
+  gap: $gap-slide;
+}
+// moving
+#slide1:checked ~ .wrapper-inner .slides {
+  transform: translateX(calc((min(100vw, $width-destinations) - $width-slide) / 2));
+}
+#slide2:checked ~ .wrapper-inner .slides {
+  transform: translateX(
+    calc(
+      ((min(100vw, $width-destinations) - $width-slide) / 2) - ($width-slide + $gap-slide)
+    )
+  );
+}
+#slide3:checked ~ .wrapper-inner .slides {
+  transform: translateX(
+    calc(
+      ((min(100vw, $width-destinations) - $width-slide) / 2) - 2 *
+        ($width-slide + $gap-slide)
+    )
+  );
+}
+
+// -----------------------------------
+//* SLIDE & IMAGE
+.slide {
+  position: relative;
+  width: $width-slide;
+}
+
+.slide__image {
+  @include size($width-slide);
+
+  border-radius: 1.6rem;
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.image1 {
+  background-image: image('spain.jpg');
+}
+.image2 {
+  background-image: image('japan.jpg');
+}
+.image3 {
+  background-image: image('usa.jpg');
+}
+
+.slide__text {
+  position: absolute;
+  @include left-top(15px, calc($width-slide - 115px));
+  @include text-slide($color-text-button);
+}
+
+// -----------------------------------
+//* CONTROLS (DOTS)
+.wrapper-dots {
+  display: flex;
+  gap: 1rem;
+}
+.wrapper-dots label {
+  width: calc(1em * 2);
+  height: calc(1em * 2);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  cursor: pointer;
+}
+.dot {
+  @include size($width-dot);
+
+  background-color: $color-dot;
+  border-radius: 50%;
+}
+.wrapper-dots label:hover .dot {
+  background-color: $color-active-dot;
+}
+#slide1:checked ~ .wrapper-inner label:nth-of-type(1) .dot,
+#slide2:checked ~ .wrapper-inner label:nth-of-type(2) .dot,
+#slide3:checked ~ .wrapper-inner label:nth-of-type(3) .dot {
+  background-color: $color-active-dot;
+}
+
+// -----------------------------------
+//* CONTROLS (ARROWS)
+
+.wrapper-arrows-prev,
+.wrapper-arrows-next {
+  position: absolute;
+  top: calc(($width-slide - $width-arrow) / 2);
+
+  @include size($width-arrow);
+  z-index: 10;
+}
+.wrapper-arrows-prev {
+  left: 1rem;
+}
+.wrapper-arrows-next {
+  right: 1rem;
+}
+
+.wrapper-arrows-prev label,
+.wrapper-arrows-next label {
+  @include size($width-arrow);
+
+  border-radius: 50%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  cursor: pointer;
+
+  display: none;
+}
+.wrapper-arrows-prev label:hover,
+.wrapper-arrows-next label:hover {
+  background-color: $color-arrow-background;
+}
+
+.prev,
+.next {
+  width: 40%;
+  height: 40%;
+
+  border-top: 5px solid $color-dot;
+  border-left: 5px solid $color-dot;
+}
+.prev {
+  transform: translateX(5px) rotate(-45deg);
+}
+.next {
+  transform: translateX(-5px) rotate(135deg);
+}
+
+#slide1:checked ~ .wrapper-arrows-prev label:nth-of-type(1),
+#slide2:checked ~ .wrapper-arrows-prev label:nth-of-type(2),
+#slide3:checked ~ .wrapper-arrows-prev label:nth-of-type(3),
+#slide1:checked ~ .wrapper-arrows-next label:nth-of-type(1),
+#slide2:checked ~ .wrapper-arrows-next label:nth-of-type(2),
+#slide3:checked ~ .wrapper-arrows-next label:nth-of-type(3) {
+  display: flex;
+}

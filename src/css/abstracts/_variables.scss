@@ -5,6 +5,7 @@
 // colors
 $color-body: #e5e5e5;
 $color-background: #ffffff;
+$color-background-bottom: rgba(255, 255, 255, 0.7);
 
 $color-header: rgba(242, 120, 92, 0.7);
 
@@ -16,6 +17,10 @@ $color-search-hover: rgba(255, 255, 255, 0.8);
 $color-search-input: #f2785c;
 
 $color-card-img: #f2785c;
+
+$color-dot: rgba(242, 120, 92, 0.5);
+$color-active-dot: #f2785c;
+$color-arrow-background: rgba(255, 255, 255, 0.5);
 
 $color-text-logo: #ffffff;
 $color-text-menu: #ffffff;
@@ -44,11 +49,20 @@ $padding-container: 2.5rem;
 $width-project: calc(1200px + $padding-container * 2);
 
 $height-top-container: 765px;
+$height-bottom-container: 1331px;
 
 $width-preview: 890px;
 $width-steps: 1177px;
+$width-destinations: $width-container;
 
 $width-preview-search: 892px;
 $height-preview-search: 59px;
 
 $width-card-img: 100px;
+
+$height-slider: 844px;
+$width-slider: 2520px;
+$width-slide: 800px;
+$gap-slide: 60px;
+$width-dot: 20px;
+$width-arrow: 70px;

@@ -59,6 +59,28 @@ body {
   margin: 0 auto;
   padding-top: 9rem;
 }
+
 .steps__layout-3-col {
   padding: 4rem 0;
+}
+
+// -----------------------------------
+//* DESTINATIONS
+.section_destinations {
+  max-width: $width-destinations;
+  margin: 0 auto;
+}
+
+.destinations {
+  max-width: $width-destinations;
+
+  @include flex-vertical(center, space-between);
+  gap: 4rem;
+}
+
+.slider-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: $width-destinations;
+  height: $height-slider;
 }

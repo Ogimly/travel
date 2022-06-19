@@ -77,16 +77,128 @@
           </div>
         </section>
 
-        <section class="section" id="destinations">
+        <section class="section_destinations" id="destinations">
           <div class="section-wrapper destinations">
             <h2 class="section__title">POPULAR DESTINATIONS</h2>
+            <div class="slider-wrapper">
+              <input class="radio-input" type="radio" name="slider" id="slide1" />
+              <input checked class="radio-input" type="radio" name="slider" id="slide2" />
+              <input class="radio-input" type="radio" name="slider" id="slide3" />
+
+              <div class="wrapper-arrows-prev">
+                <label for="slide3"> <span class="prev"></span> </label>
+                <label for="slide1"> <span class="prev"></span> </label>
+                <label for="slide2"> <span class="prev"></span> </label>
+              </div>
+
+              <div class="wrapper-inner">
+                <div class="slider">
+                  <div class="slides">
+                    <div class="slide">
+                      <div class="slide__image image1"></div>
+                      <p class="slide__text">SPAIN</p>
+                    </div>
+                    <div class="slide">
+                      <div class="slide__image image2"></div>
+                      <p class="slide__text">JAPAN</p>
+                    </div>
+                    <div class="slide">
+                      <div class="slide__image image3"></div>
+                      <p class="slide__text">USA</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="controls">
+                  <div class="wrapper-dots">
+                    <label for="slide1"> <span class="dot"></span> </label>
+                    <label for="slide2"> <span class="dot"></span> </label>
+                    <label for="slide3"> <span class="dot"></span> </label>
+                  </div>
+                </div>
+              </div>
+
+              <div class="wrapper-arrows-next">
+                <label for="slide2"> <span class="next"></span> </label>
+                <label for="slide3"> <span class="next"></span> </label>
+                <label for="slide1"> <span class="next"></span> </label>
+              </div>
+            </div>
+            <button class="btn btn_medium btn_img">Find More</button>
           </div>
         </section>
+
+        <div class="section-wrapper stories">
+          <h2 class="section__title">TRAVEL STORIES</h2>
+        </div>
       </main>
     </div>
 
     <div class="bottom-container">
-      <section class="section stories" id="stories"></section>
+      <div class="section-wrapper stories">
+        <div class="article-wrapper">
+          <article class="article article-stories">
+            <div class="article__img img1"></div>
+            <h4 class="article__title">10 Photos of Attractive Thailand</h4>
+            <p class="article__text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+              consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+              cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+              non proident, sunt in culpa qui officia deserunt mollit anim id est
+              laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit...
+            </p>
+            <a href="#" class="article__link">Read More</a>
+          </article>
+
+          <article class="article article-stories">
+            <div class="article__img img2"></div>
+            <h4 class="article__title">Canyonlands National Park, Utah</h4>
+            <p class="article__text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+              consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+              cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+              non proident, sunt in culpa qui officia deserunt mollit anim id est
+              laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit...
+            </p>
+            <a href="#" class="article__link">Read More</a>
+          </article>
+
+          <article class="article article-stories">
+            <div class="article__img img3"></div>
+            <h4 class="article__title">I left my heart in the Mountains!</h4>
+            <p class="article__text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+              consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+              cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+              non proident, sunt in culpa qui officia deserunt mollit anim id est
+              laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit...
+            </p>
+            <a href="#" class="article__link">Read More</a>
+          </article>
+
+          <article class="article article-stories">
+            <div class="article__img img4"></div>
+            <h4 class="article__title">The Longest journey in my life!</h4>
+            <p class="article__text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+              consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+              cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+              non proident, sunt in culpa qui officia deserunt mollit anim id est
+              laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit...
+            </p>
+            <a href="#" class="article__link">Read More</a>
+          </article>
+        </div>
+        <button class="btn btn_medium btn_img">See More</button>
+      </div>
       <footer></footer>
     </div>
   </body>
