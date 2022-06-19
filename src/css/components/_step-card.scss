@@ -1,0 +1,32 @@
+.step-card {
+  @include flex-vertical(center, space-between);
+}
+
+.step-card__img {
+  @include size($width-card-img);
+  background-color: $color-card-img;
+  border-radius: 1.6rem;
+
+  @include flex-horizontal(center, center);
+}
+
+.step-card__icon {
+  background-repeat: no-repeat;
+}
+.step-icon1 {
+  @include size(calc($width-card-img/2));
+  background-image: icon('step-card-1.svg');
+}
+.step-icon2 {
+  @include size(calc($width-card-img/2) + 2px);
+  background-image: icon('step-card-2.svg');
+}
+.step-icon3 {
+  @include size(calc($width-card-img/2) + 10px, calc($width-card-img/2));
+  background-image: icon('step-card-3.svg');
+}
+
+.step-card__text {
+  @include text-section($color-text-section);
+  text-align: center;
+}

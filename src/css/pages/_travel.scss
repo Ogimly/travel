@@ -15,30 +15,50 @@ body {
   font-family: 'Red Hat Text', sans-serif;
 }
 
-.section-wrapper {
+// -----------------------------------
+//* SECTION
+.section {
   max-width: $width-project;
   margin: 0 auto;
-  padding: 0 2.5rem;
+  padding: 0 $padding-container;
 }
 
+.section__title {
+  margin: 0;
+  @include text-h2($color-text-h2);
+  text-align: center;
+}
+
+// -----------------------------------
+//* SECTION PREVIEW
 .preview {
   max-width: $width-preview;
-  height: 585px;
   padding-top: 3.2rem;
+}
 
-  &__title {
-    margin: 0;
-    @include text-h1($color-text-h1);
-  }
+.preview__title {
+  margin: 0;
+  @include text-h1($color-text-h1);
+}
 
-  &__description {
-    margin: 0;
-    padding: 4.6rem 0;
-    @include text-description($color-text-description);
-  }
+.preview__description {
+  margin: 0;
+  padding: 3.6rem 0 4.6rem 0;
+  @include text-description($color-text-description);
+}
 
-  &__search {
-    max-width: $width-preview-search;
-    height: $height-preview-search;
-  }
+.preview__search {
+  max-width: $width-preview-search;
+  height: $height-preview-search;
+}
+
+// -----------------------------------
+//* SECTION STEPS
+.steps {
+  max-width: $width-steps;
+  margin: 0 auto;
+  padding-top: 9rem;
+}
+.steps__layout-3-col {
+  padding: 4rem 0;
 }

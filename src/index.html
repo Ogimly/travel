@@ -13,7 +13,7 @@
     <title>Travel Portal</title>
   </head>
   <body>
-    <div class="wrapper">
+    <div class="top-container">
       <header class="header">
         <div class="header-wrapper">
           <div class="logo">
@@ -29,28 +29,64 @@
           <button class="btn btn_small">Login</button>
         </div>
       </header>
-      <main>
-        <div class="section-wrapper">
-          <section class="section preview" id="preview">
-            <h1 class="preview__title">Explore the beauty of the World</h1>
-            <p class="preview__description">
-              Receive personalized recommendations for countries, hotels, activities and
-              more
-            </p>
-            <div class="search preview__search">
-              <input
-                type="text"
-                class="search__input"
-                placeholder="What would you like to do?"
-              />
-              <button class="btn btn_medium">Start Planning</button>
-            </div>
-          </section>
-          <section class="section section_steps" id="steps"></section>
-          <section class="section section_destinations" id="destinations"></section>
-          <section class="section section_stories" id="stories"></section>
+
+      <section class="section" id="preview">
+        <div class="section-wrapper preview">
+          <h1 class="preview__title">Explore the beauty of the World</h1>
+          <p class="preview__description">
+            Receive personalized recommendations for countries, hotels, activities and
+            more
+          </p>
+          <div class="search preview__search">
+            <input
+              type="text"
+              class="search__input"
+              placeholder="What would you like to do?"
+            />
+            <button class="btn btn_medium">Start Planning</button>
+          </div>
         </div>
+      </section>
+    </div>
+
+    <div class="container">
+      <main>
+        <section class="section" id="steps">
+          <div class="section-wrapper steps">
+            <h2 class="section__title">3 STEPS TO THE PERFECT TRIP</h2>
+            <div class="layout-3-col steps__layout-3-col">
+              <div class="step-card">
+                <div class="step-card__img">
+                  <div class="step-card__icon step-icon1"></div>
+                </div>
+                <p class="step-card__text">Tell us what you want to do</p>
+              </div>
+              <div class="step-card">
+                <div class="step-card__img">
+                  <div class="step-card__icon step-icon2"></div>
+                </div>
+                <p class="step-card__text">Share us preferable dates</p>
+              </div>
+              <div class="step-card">
+                <div class="step-card__img">
+                  <div class="step-card__icon step-icon3"></div>
+                </div>
+                <p class="step-card__text">We will give you recommendations</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="section" id="destinations">
+          <div class="section-wrapper destinations">
+            <h2 class="section__title">POPULAR DESTINATIONS</h2>
+          </div>
+        </section>
       </main>
+    </div>
+
+    <div class="bottom-container">
+      <section class="section stories" id="stories"></section>
       <footer></footer>
     </div>
   </body>

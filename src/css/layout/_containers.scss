@@ -1,0 +1,14 @@
+.top-container {
+  max-width: $width-container;
+  height: $height-top-container;
+
+  margin: 0 auto;
+  background-image: image('garrett-parker-DlkF4-dbCOU-unsplash-1.jpg');
+  background-repeat: no-repeat;
+}
+
+.container {
+  max-width: $width-container;
+  margin: 0 auto;
+  background-color: $color-background;
+}

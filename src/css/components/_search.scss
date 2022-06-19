@@ -6,24 +6,24 @@
 
   @include flex-horizontal(center, space-between);
 
-  &__input {
-    padding: 2.3rem;
-    border: 0;
-    background-color: transparent;
-    @include text-search-input($color-search-input);
-
-    &::placeholder {
-      color: $color-search-input;
-    }
-
-    &:focus {
-      outline: none !important;
-
-      @include text-search-input($color-search-input);
-    }
-  }
-
   &:hover {
     background-color: $color-search-hover;
+  }
+}
+
+.search__input {
+  padding: 2.3rem;
+  border: 0;
+  background-color: transparent;
+  @include text-search-input($color-search-input);
+
+  &::placeholder {
+    color: $color-search-input;
+  }
+
+  &:focus {
+    outline: none !important;
+
+    @include text-search-input($color-search-input);
   }
 }

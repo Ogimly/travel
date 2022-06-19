@@ -1,19 +1,19 @@
 // -----------------------------------------------------------------------------
 // This file contains all application-wide Sass mixins.
 // -----------------------------------------------------------------------------
-/// Помощник для определения размера
+//* SIZE
 @mixin size($width, $height: $width) {
   width: $width;
   height: $height;
 }
-/// Помощник для определения position
+//* POSITION
 @mixin left-top($left: 0, $top: 0) {
   left: $left;
   top: $top;
 }
 
 // -----------------------------------------------------------------------------
-/// медиазапросы
+//* MEDIA QUERY
 /// width <= $breakpoint-large
 @mixin media-medium {
   @media (max-width: $breakpoint-large) {
@@ -28,16 +28,13 @@
 }
 
 // -----------------------------------------------------------------------------
-/// Помощник для определения flex: вертикальные блоки, по умолчанию по всей высоте контейнера.
-/// Выраввнивание по горизонтали - в параметре, по умолчанию по центру
+//* FLEX
 @mixin flex-vertical($align-items: center, $justify-content: space-between) {
   display: flex;
   flex-direction: column;
   justify-content: $justify-content;
   align-items: $align-items;
 }
-/// Помощник для определения flex: горизонтальные блоки, по умолчанию по всей ширине контейнера.
-/// Выраввнивание по вертикали - в параметре, по умолчанию по центру
 @mixin flex-horizontal($align-items: center, $justify-content: space-between) {
   display: flex;
   flex-direction: row;
@@ -46,7 +43,7 @@
 }
 
 // -----------------------------------------------------------------------------
-/// fonts
+//* TEXT_FONTS
 @mixin text-logo($color) {
   font-family: 'Magra';
   font-style: normal;
@@ -92,10 +89,28 @@
   color: $color;
 }
 
+@mixin text-h2($color) {
+  font-family: 'Red Hat Text';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 4rem;
+  line-height: 5.3rem;
+  color: $color;
+}
+
 @mixin text-description($color) {
   font-family: 'Aleo';
   font-style: italic;
   font-weight: 700;
+  font-size: 2rem;
+  line-height: 2.4rem;
+  color: $color;
+}
+
+@mixin text-section($color) {
+  font-family: 'Aleo';
+  font-style: normal;
+  font-weight: 400;
   font-size: 2rem;
   line-height: 2.4rem;
   color: $color;

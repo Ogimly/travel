@@ -1,0 +1,20 @@
+.layout-2-col {
+  @include flex-horizontal(center, space-between);
+  > * {
+    flex-basis: 50%;
+  }
+}
+
+.layout-3-col {
+  @include flex-horizontal(center, space-between);
+  > * {
+    flex-basis: 33%;
+  }
+}
+
+.layout-4-col {
+  @include flex-horizontal(center, space-between);
+  > * {
+    flex-basis: 25%;
+  }
+}
