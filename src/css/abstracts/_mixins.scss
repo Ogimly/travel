@@ -56,15 +56,6 @@
   color: $color;
 }
 
-@mixin text-menu($color) {
-  font-family: 'Red Hat Text';
-  font-style: normal;
-  font-weight: 500;
-  font-size: 1.6rem;
-  line-height: 2.1rem;
-  color: $color;
-}
-
 @mixin text-line-menu($color) {
   font-family: 'Red Hat Text';
   font-style: normal;
@@ -80,5 +71,41 @@
   font-weight: 500;
   font-size: 1.6rem;
   line-height: 2.1rem;
+  color: $color;
+}
+
+@mixin text-button-medium($color) {
+  font-family: 'Red Hat Text';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 2.4rem;
+  line-height: 3.2rem;
+  color: $color;
+}
+
+@mixin text-h1($color) {
+  font-family: 'Aleo';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 8rem;
+  line-height: 9.6rem;
+  color: $color;
+}
+
+@mixin text-description($color) {
+  font-family: 'Aleo';
+  font-style: italic;
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 2.4rem;
+  color: $color;
+}
+
+@mixin text-search-input($color) {
+  font-family: 'Aleo';
+  font-style: italic;
+  font-weight: 400;
+  font-size: 2.4rem;
+  line-height: 2.9rem;
   color: $color;
 }

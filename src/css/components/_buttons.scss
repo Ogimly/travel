@@ -15,4 +15,8 @@
   &_small {
     @include text-button-small($color-text-button);
   }
+
+  &_medium {
+    @include text-button-medium($color-text-button);
+  }
 }
