@@ -1,7 +1,26 @@
 .footer-wrapper {
   max-width: $width-project;
   margin: 0 auto;
-  padding: 2.5rem;
+  padding: 2rem 2.5rem 1.3rem 2.5rem;
 
   @include flex-horizontal(center, space-between);
+}
+
+.git-hab {
+  width: calc($width-soc-net-icon * 3 + 4rem);
+}
+
+.copyright {
+  @include text-line-menu($color-text-footer);
+}
+
+.social-net-wrapper {
+  @include flex-horizontal(center, space-between);
+  gap: 2rem;
+}
+
+.git-hab svg,
+.social-net__item svg {
+  @include size($width-soc-net-icon);
+  fill: $color-text-footer;
 }
