@@ -17,6 +17,9 @@
   @include flex-horizontal(center);
   gap: 0.6rem;
 }
+.logo svg {
+  fill: $color-text-logo;
+}
 .logo__title {
   @include text-logo($color-text-logo);
 }
