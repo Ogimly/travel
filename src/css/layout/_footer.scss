@@ -1,0 +1,7 @@
+.footer-wrapper {
+  max-width: $width-project;
+  margin: 0 auto;
+  padding: 2.5rem;
+
+  @include flex-horizontal(center, space-between);
+}

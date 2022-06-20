@@ -18,7 +18,14 @@
   height: $height-bottom-container;
 
   margin: 0 auto;
-  // background-image: image('garrett-parker-DlkF4-dbCOU-unsplash.jpg');
-  // background-color: $color-background-bottom;
-  // background-repeat: no-repeat;
+  background: image('garrett-parker-DlkF4-dbCOU-unsplash.jpg') no-repeat 0, 0;
+  // background: linear-gradient($color-background-bottom, $color-background-bottom),
+  //   image('garrett-parker-DlkF4-dbCOU-unsplash.jpg') no-repeat;
+}
+.background-container {
+  max-width: $width-container;
+  height: $height-bottom-container - $height-footer;
+
+  margin: 0 auto;
+  background-color: $color-background-bottom;
 }

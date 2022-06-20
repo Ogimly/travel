@@ -51,9 +51,12 @@ $width-project: calc(1200px + $padding-container * 2);
 $height-top-container: 765px;
 $height-bottom-container: 1331px;
 
+$height-footer: 60px;
+
 $width-preview: 890px;
 $width-steps: 1177px;
 $width-destinations: $width-container;
+$width-stories: $width-project;
 
 $width-preview-search: 892px;
 $height-preview-search: 59px;
@@ -66,3 +69,6 @@ $width-slide: 800px;
 $gap-slide: 60px;
 $width-dot: 20px;
 $width-arrow: 70px;
+
+$width-article-img: 400px;
+$height-article-img: 250px;

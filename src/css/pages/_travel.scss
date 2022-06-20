@@ -84,3 +84,22 @@ body {
   max-width: $width-destinations;
   height: $height-slider;
 }
+
+// -----------------------------------
+//* STORIES
+.stories {
+  max-width: $width-stories;
+  margin: 0 auto;
+  padding-top: 9rem;
+  padding-bottom: 4rem;
+}
+
+.article-wrapper {
+  max-width: $width-stories;
+  margin: 0 auto;
+  padding: 4rem $padding-container;
+  z-index: 10;
+
+  @include flex-vertical(center, space-between);
+  gap: 3.3rem;
+}

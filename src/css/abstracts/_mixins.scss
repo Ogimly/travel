@@ -129,7 +129,16 @@
   font-family: 'Red Hat Text';
   font-style: normal;
   font-weight: 500;
-  font-size: 32px;
-  line-height: 42px;
+  font-size: 3.2rem;
+  line-height: 4.2rem;
+  color: $color;
+}
+
+@mixin text-article-title($color) {
+  font-family: 'Aleo';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 3.5rem;
+  line-height: 4.2rem;
   color: $color;
 }
