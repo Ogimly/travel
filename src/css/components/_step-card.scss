@@ -4,29 +4,51 @@
 
 .step-card__img {
   @include size($width-card-img);
+  @include media-s {
+    @include size($width-card-img-s);
+  }
   background-color: $color-card-img;
-  border-radius: 1.6rem;
+  border-radius: 16px;
 
   @include flex-horizontal(center, center);
 }
 
 .step-card__icon {
+  background-size: contain;
   background-repeat: no-repeat;
 }
 .step-icon1 {
   @include size(calc($width-card-img/2));
+  @include media-s {
+    @include size(calc($width-card-img-s/2));
+  }
   background-image: icon('step-card-1.svg');
 }
 .step-icon2 {
   @include size(calc($width-card-img/2) + 2px);
+  @include media-s {
+    @include size(calc($width-card-img-s/2) + 2px);
+  }
   background-image: icon('step-card-2.svg');
 }
 .step-icon3 {
-  @include size(calc($width-card-img/2) + 10px, calc($width-card-img/2));
+  @include size(
+    calc($width-card-img/2) + calc($width-card-img/10),
+    calc($width-card-img/2)
+  );
+  @include media-s {
+    @include size(
+      calc($width-card-img-s/2) + calc($width-card-img-s/10),
+      calc($width-card-img-s/2)
+    );
+  }
   background-image: icon('step-card-3.svg');
 }
 
 .step-card__text {
+  margin: 0;
+  padding: 3rem 0;
+
   @include text-section($color-text-section);
   text-align: center;
 }

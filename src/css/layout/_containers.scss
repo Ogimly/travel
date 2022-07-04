@@ -1,10 +1,15 @@
 .top-container {
   max-width: $width-container;
-  height: $height-top-container;
 
   margin: 0 auto;
   background-image: image('garrett-parker-DlkF4-dbCOU-unsplash-1.jpg');
+  background-size: cover;
   background-repeat: no-repeat;
+
+  @include media-xs {
+    background-image: $color-header-xs,
+      image('xs-garrett-parker-DlkF4-dbCOU-unsplash-1.jpg');
+  }
 }
 
 .container {
@@ -15,16 +20,18 @@
 
 .bottom-container {
   max-width: $width-container;
-  height: $height-bottom-container;
 
   margin: 0 auto;
-  background: image('garrett-parker-DlkF4-dbCOU-unsplash.jpg') no-repeat 0, 0;
-  // background: linear-gradient($color-background-bottom, $color-background-bottom),
-  //   image('garrett-parker-DlkF4-dbCOU-unsplash.jpg') no-repeat;
+  background-image: image('garrett-parker-DlkF4-dbCOU-unsplash.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  @include media-xs {
+    background-image: image('xs-garrett-parker-DlkF4-dbCOU-unsplash.jpg');
+  }
 }
 .background-container {
   max-width: $width-container;
-  height: $height-bottom-container - $height-footer;
 
   margin: 0 auto;
   background-color: $color-background-bottom;

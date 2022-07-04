@@ -1,9 +1,25 @@
 html {
   scroll-behavior: smooth;
   font-size: 10px;
+  @include media-xl {
+    font-size: 9px;
+  }
+  @include media-l {
+    font-size: 8px;
+  }
+  @include media-m {
+    font-size: 7px;
+  }
+  @include media-s {
+    font-size: 6px;
+  }
+  @include media-xs {
+    font-size: 5px;
+  }
 }
 
 * {
+  box-sizing: border-box;
   text-decoration: none;
   transition: all 0.5s;
 }
@@ -25,8 +41,12 @@ body {
 
 .section__title {
   margin: 0;
-  @include text-h2($color-text-h2);
   text-align: center;
+  @include text-h2($color-text-h2);
+
+  @include media-xs {
+    font-size: 2.8rem;
+  }
 }
 
 // -----------------------------------
@@ -34,34 +54,70 @@ body {
 .preview {
   max-width: $width-preview;
   padding-top: 3.2rem;
+  padding-bottom: 25.3rem;
+
+  @include media-l {
+    padding-bottom: 20rem;
+  }
+  @include media-m {
+    padding-bottom: 15rem;
+  }
+  @include media-s {
+    padding-bottom: 12rem;
+  }
+  @include media-xs {
+    padding-bottom: 12rem;
+  }
 }
 
 .preview__title {
   margin: 0;
   @include text-h1($color-text-h1);
+
+  @include media-xs {
+    display: none;
+  }
 }
 
 .preview__description {
   margin: 0;
-  padding: 3.6rem 0 4.6rem 0;
+  padding: 3.2rem 0 4.6rem 0;
   @include text-description($color-text-description);
+
+  @include media-xs {
+    display: none;
+  }
 }
 
 .preview__search {
   max-width: $width-preview-search;
-  height: $height-preview-search;
+  @include media-xs {
+    margin-top: 8.1rem;
+  }
 }
 
 // -----------------------------------
 //* SECTION STEPS
-.steps {
+.section_steps {
   max-width: $width-steps;
   margin: 0 auto;
-  padding-top: 9rem;
+  padding-top: 8rem;
+
+  @include media-m {
+    padding-top: 5.7rem;
+  }
+  @include media-xs {
+    padding-top: 3.3rem;
+  }
 }
 
 .steps__layout-3-col {
   padding: 4rem 0;
+  align-items: flex-start;
+
+  @include media-xs {
+    padding: 3.5rem 0 0 0;
+  }
 }
 
 // -----------------------------------
@@ -69,37 +125,59 @@ body {
 .section_destinations {
   max-width: $width-destinations;
   margin: 0 auto;
+  padding-top: 2.7rem;
+
+  @include media-xs {
+    padding-top: 1rem;
+  }
 }
 
 .destinations {
   max-width: $width-destinations;
 
   @include flex-vertical(center, space-between);
-  gap: 4rem;
+  gap: 3.8rem;
+
+  @include media-xs {
+    gap: 2.5rem;
+  }
 }
 
 .slider-wrapper {
+  padding-top: 0.7rem;
   position: relative;
   width: 100%;
   max-width: $width-destinations;
   height: $height-slider;
+
+  @include media-xs {
+    height: $height-slider-xs;
+  }
 }
 
 // -----------------------------------
 //* STORIES
 .stories {
+  padding-top: 8rem;
+  padding-bottom: 4rem;
   max-width: $width-stories;
   margin: 0 auto;
-  padding-top: 9rem;
-  padding-bottom: 4rem;
+
+  @include media-xs {
+    padding-top: 3.4rem;
+    padding-bottom: 1.4rem;
+  }
 }
 
 .article-wrapper {
   max-width: $width-stories;
   margin: 0 auto;
   padding: 4rem $padding-container;
-  z-index: 10;
 
   @include flex-vertical(center, space-between);
-  gap: 3.3rem;
+  gap: 3.1rem;
+
+  @include media-xs {
+    padding: 1.5rem $padding-container;
+  }
 }

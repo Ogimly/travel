@@ -1,11 +1,9 @@
 .btn {
-  padding: 1rem 3rem;
-
   background-color: $color-button;
 
   border: none;
   box-shadow: $box-shadow-button1, $box-shadow-button2;
-  border-radius: 1rem;
+  border-radius: 10px;
 
   &:hover {
     cursor: pointer;
@@ -14,25 +12,53 @@
 }
 
 .btn_small {
+  padding: 1rem 3rem;
+  @include media-m {
+    padding: 1.1rem 2rem;
+  }
+  @include media-s {
+    padding: 1.2rem 1.7rem;
+  }
   @include text-button-small($color-text-button);
 }
 
 .btn_medium {
+  padding: 1.3rem 3.3rem;
   @include text-button-medium($color-text-button);
+
+  @include media-m {
+    padding: 1.3rem 2rem;
+  }
+  @include media-s {
+    padding: 1.3rem 1.7rem;
+  }
+  @include media-xs {
+    padding: 1.4rem 3.3rem;
+    font-size: 2rem;
+  }
 }
 
 .btn_img {
   padding-left: 8rem;
   position: relative;
-  // background-image: icon('arrow-right.svg');
-  // background-repeat: no-repeat;
+
+  @include media-xs {
+    padding-left: 5.2rem;
+  }
 
   &::before {
     content: '';
     position: absolute;
-    left: 31px;
-    top: 6px;
-    @include size(40px);
+    left: 3.1rem;
+    top: 0.8rem;
+
+    @include size(4rem);
+    @include media-xs {
+      left: 1.7rem;
+      top: 1.7rem;
+      @include size(2.5rem);
+    }
+
     background-size: contain;
     background-repeat: no-repeat;
     background-image: icon('arrow-right.svg');

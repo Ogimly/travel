@@ -1,6 +1,13 @@
 .header {
   background: $color-header;
   box-shadow: $box-shadow-header;
+
+  @include media-xs {
+    background: transparent;
+    box-shadow: none;
+
+    padding-top: 6.3rem;
+  }
 }
 
 .header-wrapper {
@@ -22,6 +29,10 @@
 }
 .logo__title {
   @include text-logo($color-text-logo);
+
+  @include media-l {
+    display: none;
+  }
 }
 
 // -----------------------------------
@@ -29,6 +40,16 @@
 .line-menu {
   @include flex-horizontal(center, space-between);
   gap: 4.2rem;
+
+  @include media-xl {
+    gap: 2.8rem;
+  }
+  @include media-l {
+    gap: 1.6rem;
+  }
+  @include media-xs {
+    display: none;
+  }
 }
 .line-menu__item {
   position: relative;
@@ -50,6 +71,54 @@
     animation-name: slideIn;
     animation-duration: 0.5s;
     animation-fill-mode: forwards;
+  }
+}
+
+.burger-menu {
+  display: none;
+
+  @include media-xs {
+    position: relative;
+    display: block;
+    margin-right: 10px;
+
+    @include size($width-burger, $height-burger);
+    cursor: pointer;
+    z-index: 10;
+
+    .burger-menu__item {
+      content: '';
+      position: absolute;
+      display: inline-block;
+      width: 100%;
+      height: 2px;
+      background-color: $color-text-logo;
+      transition: all 0.5s ease-out;
+      @include left-top(0, 7px);
+
+      &::before,
+      &::after {
+        content: '';
+        position: absolute;
+        display: inline-block;
+        width: 100%;
+        height: 2px;
+        background-color: $color-text-logo;
+        transition: all 0.5s ease-out;
+      }
+      &::before {
+        @include left-top(0, -7px);
+      }
+      &::after {
+        @include left-top(0, 7px);
+      }
+    }
+  }
+}
+
+.header__btn {
+  @include media-xs {
+    display: none;
   }
 }
 

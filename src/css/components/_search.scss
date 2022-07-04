@@ -2,7 +2,7 @@
   padding: 1.8rem;
 
   background-color: $color-search;
-  border-radius: 1.6rem;
+  border-radius: 16px;
 
   @include flex-horizontal(center, space-between);
 
@@ -12,7 +12,8 @@
 }
 
 .search__input {
-  padding: 2.3rem;
+  padding: 1.5rem;
+  padding-left: 2.5rem;
   border: 0;
   background-color: transparent;
   @include text-search-input($color-search-input);

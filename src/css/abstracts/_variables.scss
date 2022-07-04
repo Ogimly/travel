@@ -8,6 +8,7 @@ $color-background: #ffffff;
 $color-background-bottom: rgba(255, 255, 255, 0.7);
 
 $color-header: rgba(242, 120, 92, 0.7);
+$color-header-xs: linear-gradient(180deg, #0d606f 0%, rgba(13, 96, 111, 0) 25.1%);
 
 $color-button: #0d606f;
 $color-button-hover: #117a8d;
@@ -37,11 +38,17 @@ $color-text-footer: #ffffff;
 $box-shadow-header: 0px 4px 4px rgba(13, 96, 111, 0.5);
 $box-shadow-button1: 0px 4px 4px rgba(0, 0, 0, 0.25);
 $box-shadow-button2: 0px 2px 3px rgba(13, 96, 111, 0.16);
+$box-shadow-article-img: 0px 4px 4px #0d606f;
 
 /// Relative or absolute URL where all assets are served from
 $base-url: '../assets/' !default;
 
 /// Breakpoints
+$breakpoint-xl: 1000px;
+$breakpoint-l: 800px;
+$breakpoint-m: 650px;
+$breakpoint-s: 500px;
+$breakpoint-xs: 390px;
 
 // width and height of project
 $width-container: 1440px;
@@ -49,29 +56,35 @@ $width-container: 1440px;
 $padding-container: 2.5rem;
 $width-project: calc(1200px + $padding-container * 2);
 
-$height-top-container: 765px;
-$height-bottom-container: 1331px;
-
-$height-footer: 60px;
+$width-burger: 27px;
+$height-burger: 16px;
 
 $width-preview: 890px;
-$width-steps: 1177px;
+$width-steps: 1330px;
 $width-destinations: $width-container;
 $width-stories: $width-project;
 
 $width-preview-search: 892px;
-$height-preview-search: 59px;
+$height-preview-search: 95px;
 
 $width-card-img: 100px;
+$width-card-img-s: 70px;
 
-$height-slider: 844px;
-$width-slider: 2520px;
-$width-slide: 800px;
-$gap-slide: 60px;
+$height-slider: 85.4rem;
+$height-slider-xs: 42rem;
+$width-slider: 252rem;
+$width-slider-xs: 228rem;
+$width-slide: 80rem;
+$width-slide-xs: 72rem;
+$gap-slide: 6rem;
 $width-dot: 20px;
 $width-arrow: 70px;
+$width-arrow-xs: 50px;
 
 $width-article-img: 400px;
 $height-article-img: 250px;
+$height-article-img-xs: 130px;
 
+$height-footer: 60px;
+$height-footer-xs: 65px;
 $width-soc-net-icon: 32px;

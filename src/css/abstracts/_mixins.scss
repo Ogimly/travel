@@ -14,15 +14,33 @@
 
 // -----------------------------------------------------------------------------
 //* MEDIA QUERY
-/// width <= $breakpoint-large
-@mixin media-medium {
-  @media (max-width: $breakpoint-large) {
+/// width <= $breakpoint-xl
+@mixin media-xl {
+  @media (max-width: $breakpoint-xl) {
     @content;
   }
 }
-/// width <= $breakpoint-medium
-@mixin media-small {
-  @media (max-width: $breakpoint-medium) {
+/// width <= $breakpoint-l
+@mixin media-l {
+  @media (max-width: $breakpoint-l) {
+    @content;
+  }
+}
+/// width <= $breakpoint-m
+@mixin media-m {
+  @media (max-width: $breakpoint-m) {
+    @content;
+  }
+}
+/// width <= $breakpoint-s
+@mixin media-s {
+  @media (max-width: $breakpoint-s) {
+    @content;
+  }
+}
+/// width <= $breakpoint-xs
+@mixin media-xs {
+  @media (max-width: $breakpoint-xs) {
     @content;
   }
 }
